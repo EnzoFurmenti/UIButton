@@ -13,6 +13,8 @@
 		96B67BA41D7EB9CB0002110D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B67BA21D7EB9CB0002110D /* Main.storyboard */; };
 		96B67BA61D7EB9CB0002110D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96B67BA51D7EB9CB0002110D /* Assets.xcassets */; };
 		96B67BA91D7EB9CB0002110D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96B67BA71D7EB9CB0002110D /* LaunchScreen.storyboard */; };
+		96B67BB11D7FF03C0002110D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96B67BB01D7FF03C0002110D /* UIKit.framework */; };
+		96B67BB41D7FFDBC0002110D /* CustomLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B67BB31D7FFDBC0002110D /* CustomLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		96B67BA51D7EB9CB0002110D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96B67BA81D7EB9CB0002110D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96B67BAA1D7EB9CB0002110D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B67BB01D7FF03C0002110D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96B67BB21D7FFDBC0002110D /* CustomLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomLabel.h; sourceTree = "<group>"; };
+		96B67BB31D7FFDBC0002110D /* CustomLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B67BB11D7FF03C0002110D /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +48,9 @@
 		96B67B8D1D7EB9CB0002110D = {
 			isa = PBXGroup;
 			children = (
+				96B67BB21D7FFDBC0002110D /* CustomLabel.h */,
+				96B67BB31D7FFDBC0002110D /* CustomLabel.m */,
+				96B67BB01D7FF03C0002110D /* UIKit.framework */,
 				96B67B981D7EB9CB0002110D /* UIButton */,
 				96B67B971D7EB9CB0002110D /* Products */,
 			);
@@ -153,6 +162,7 @@
 				96B67BA11D7EB9CB0002110D /* ViewController.m in Sources */,
 				96B67B9E1D7EB9CB0002110D /* AppDelegate.m in Sources */,
 				96B67B9B1D7EB9CB0002110D /* main.m in Sources */,
+				96B67BB41D7FFDBC0002110D /* CustomLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EFCompany.UIButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -281,6 +292,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.EFCompany.UIButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

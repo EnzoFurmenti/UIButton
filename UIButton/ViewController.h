@@ -10,6 +10,17 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *arrayButton
+;
+
+
+
+
+- (IBAction)actionButton:(UIButton *)sender;
+
+
 
 @end
 
